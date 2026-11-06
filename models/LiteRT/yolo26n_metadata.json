@@ -1,0 +1,13 @@
+{
+  "model_family": "YOLO26",
+  "variant": "yolo26n",
+  "task": "object_detection",
+  "input_size": [
+    640,
+    640
+  ],
+  "class_count": 80,
+  "labels_file": "coco_labels.txt",
+  "quantization": "fp32",
+  "offline_android_target": true
+}

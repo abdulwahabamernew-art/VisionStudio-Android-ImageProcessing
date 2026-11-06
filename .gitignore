@@ -1,0 +1,29 @@
+# Android & Gradle
+.gradle/
+.kotlin/
+build/
+**/build/
+*.iml
+.idea/
+local.properties
+.DS_Store
+
+# Signing Keys & Credentials (CRITICAL SECURITY)
+*.jks
+*.keystore
+00_Private_Signing_Key/
+signing-config-versions.json
+
+# Compiled Binaries (Uploaded via GitHub Releases)
+*.apk
+*.aab
+*.dex
+*.class
+
+# Python & Colab
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.zip
+*.tar.gz
+archive/

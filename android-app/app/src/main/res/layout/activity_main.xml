@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:orientation="vertical" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:text="VisionStudio" android:textSize="26sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/status" android:text="اختر صورة أو فيديو" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/imageView" android:adjustViewBounds="true" android:minHeight="280dp" android:scaleType="fitCenter" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <VideoView android:id="@+id/videoView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="280dp"/>
+    <Spinner android:id="@+id/effectSpinner" android:layout_width="match_parent" android:layout_height="56dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/openImage" android:text="صورة" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/openVideo" android:text="فيديو" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/liveCamera" android:text="كاميرا" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:id="@+id/applyEffect" android:text="تطبيق المعالجة على الصورة" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/processVideo" android:text="معالجة وتصدير الفيديو (بدون صوت)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/haarButton" android:text="وجه وعين" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/yoloButton" android:text="YOLO" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/saveButton" android:text="حفظ" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:id="@+id/aboutButton" android:text="عن التطبيق" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout></ScrollView>
